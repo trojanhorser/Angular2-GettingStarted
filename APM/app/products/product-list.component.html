@@ -48,7 +48,9 @@
                             >
                         </td>
                         <td> 
-                            {{product.productName | lowercase}}
+                            <a [routerLink]="['ProductDetail',{id: product.productId}]">
+                                {{product.productName | lowercase}}
+                            </a>
                         </td>
                         <td>
                             {{product.productCode}}
