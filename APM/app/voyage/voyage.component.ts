@@ -7,15 +7,13 @@ import {Component} from 'angular2/core'
 
 export class VoyageComponent{
     
-    billOfLadingNumber: number;
-    masterBillOfLadingNumber: number = 50;
-    billOfLadingType: number = 2;
-    wharfCode: string;
-    originPort: string;
-    destination: string;
-    loadingPort: string;
-    discharge: string;
-    consignee: string;
-    shipper: string;
-    notify: string;
+    showVoyageHeader: Boolean = true;
+    showVoyageCalapseIcon: Boolean = true;
+    showVoyageMaximizeIcon: Boolean = false;
+    
+    
+    onMinimizeClicked(event): void{
+        this.showVoyageCalapseIcon =  !this.showVoyageCalapseIcon;
+        this.showVoyageMaximizeIcon =  !this.showVoyageMaximizeIcon;
+    }
 }

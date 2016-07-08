@@ -1,5 +1,37 @@
-<div class="form-group">
-       <label for="normal-field" class="col-sm-4 control-label">Normal field</label>
-       <div class="col-sm-7"><input type="text" id="normal-field" class="form-control" placeholder="May have placeholder">
-       </div>
-</div>
+        
+        <section class="widget">
+                    <header>
+                        <h4>
+                            <div class="row">
+                                
+                                <div class="col-md-4">
+                                    Voyage
+                                
+                                </div>
+                                
+                                <div class="col-md-2">
+                                    <h6>Voyage <span class="label label-default">1001</span></h6>
+                                
+                                </div>
+                                <div class="col-md-2">
+                                    <h6>Vessel <span class="label label-default">Adria Ace</span></h6>
+                                </div>
+                                <div class="col-md-2">
+                                        <h6>Arrival Date <span class="label label-default">19-June-2016</span></h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <h6>Type <span class="label label-default">Import</span></h6>
+                                </div>
+                           </div>
+                        </h4>
+                       <div class="widget-controls">
+                           <a (click)="onMinimizeClicked()" *ngIf="showVoyageMaximizeIcon" data-widgster="expand"  title="Expand" ><i class="glyphicon glyphicon-chevron-up"></i></a>
+                           <a (click)="onMinimizeClicked()" *ngIf="showVoyageCalapseIcon"  data-widgster="collapse" title="Collapse" href="#" style="display: inline;"><i class="glyphicon glyphicon-chevron-down"></i></a>
+                       </div>
+                    </header>
+                    
+      </section>
+         
+        
+ 
+

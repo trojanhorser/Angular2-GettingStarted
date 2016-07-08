@@ -7,7 +7,7 @@ import {ProductListComponent} from './products/product-list.component'
 import {ProductService} from './products/product.service' 
 import {WelcomeComponent} from './home/welcome.component' 
 import {ProductDetailComponent} from './products/product-detail.component' 
-import {BillOfLadingComponent} from './billoflading/billoflading.component'
+import {BillOfLadingComponent} from './billoflading/main/main.component'
 
 
 @Component({
