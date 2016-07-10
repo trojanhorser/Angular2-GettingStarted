@@ -1,0 +1,63 @@
+<section class="widget">
+    <header>
+
+        <div class="input-group">
+
+            <input type="search" class="form-control col-sm-8" id="search-input">
+
+        </div>
+
+    </header>
+    <div class="widget-body">
+
+        <table class="table table-bordered table-lg mt-lg mb-0">
+            <thead>
+                <tr>
+                    <th class="text-align-center"></th>
+                    <th class="text-align-center">Quantity</th>
+                    <th class="text-align-center">Package</th>
+                    <th class="text-align-center">Commodity</th>
+                    <th class="text-align-center">HS Code</th>
+                    <th class="text-align-center">Weight</th>
+                    <th class="text-align-center">Volume</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="#cargo of cargos">
+                <tr>
+                    <td>
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </td>
+                    <td>{{cargo.quantity}}</td>
+                    <td class="text-align-right">{{cargo.package}}</td>
+                    <td class="text-align-right">{{cargo.commodity}}</td>
+                    <td class="text-align-right">{{cargo.hsCode}}</td>
+                    <td class="text-align-right">{{cargo.weight}}</td>
+                    <td class="text-align-right">{{cargo.volume}}</td>
+
+                </tr>
+                <tr>
+
+                    <td colspan="7">
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="exampleInputEmail2">Marks And Numbers</label>
+                                <input class="form-control ng-pristine ng-valid ng-touched" id="exampleInputEmail2" placeholder="" type="email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="exampleInputEmail2">Description</label>
+                                <input class="form-control ng-pristine ng-valid ng-touched" id="exampleInputEmail2" placeholder="" type="email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <label for="exampleInputEmail2">Associated Containers</label>
+                                <input class="form-control ng-pristine ng-valid ng-touched" id="exampleInputEmail2" placeholder="" type="email">
+                            </div>
+
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>

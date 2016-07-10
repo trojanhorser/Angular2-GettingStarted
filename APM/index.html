@@ -46,18 +46,7 @@
     
     <!-- 2. Configure SystemJS -->
     
-    <script>
-        System.config({
-        packages: {        
-          app: {
-            format: 'register',
-            defaultExtension: 'js'
-          }
-        }
-      });
-      System.import('app/main')
-            .then(null, console.error.bind(console));
-    </script>
+    
 </head>
 
 <body>
@@ -798,6 +787,18 @@
 <!-- page specific js -->
 <script src="sing/js/index.js"></script>
 
+<script>
+        System.config({
+        packages: {        
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('app/main')
+            .then(null, console.error.bind(console));
+</script>
 </body>
 
 </html>
