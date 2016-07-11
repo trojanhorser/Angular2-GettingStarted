@@ -3,7 +3,7 @@
 
         <div class="input-group">
 
-            <input type="search" class="form-control col-sm-8" id="search-input">
+            <input type="search" [(ngModel)]='listFilter' class="form-control col-sm-8" id="search-input">
 
         </div>
 
@@ -22,10 +22,11 @@
                     <th class="text-align-center">Volume</th>
                 </tr>
             </thead>
-            <tbody *ngFor="#cargo of cargos">
+            <tbody *ngFor="#cargo of cargos | cargoFilter:listFilter">
                 <tr>
                     <td>
-                        <span class="glyphicon glyphicon-plus"></span>
+                        <span *ngIf="!cargo.showDetails" (click)="toggleDetails(cargo.index)" class="glyphicon glyphicon-plus"></span>
+                        <span *ngIf="cargo.showDetails" (click)="toggleDetails(cargo.index)"  class="glyphicon glyphicon-minus"></span>
                     </td>
                     <td>{{cargo.quantity}}</td>
                     <td class="text-align-right">{{cargo.package}}</td>
@@ -35,7 +36,7 @@
                     <td class="text-align-right">{{cargo.volume}}</td>
 
                 </tr>
-                <tr>
+                <tr *ngIf="cargo.showDetails">
 
                     <td colspan="7">
                         <div class="row">

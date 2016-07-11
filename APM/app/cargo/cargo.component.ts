@@ -1,13 +1,18 @@
 import {Component} from 'angular2/core' 
+import {CargoFilterPipe} from './cargo-filter.pipe'
 
 @Component({
     selector: 'cargo',
-    templateUrl: 'app/cargo/cargo.component.html'
+    templateUrl: 'app/cargo/cargo.component.html',
+    pipes: [CargoFilterPipe]
 })
 
 export class CargoComponent{
-    
+   
+    listFilter: string;
+   
     cargos: any = [{
+            "index":0,
             "quantity": 500,
             "package": "Lumber",
             "commodity": "Something",
@@ -25,6 +30,7 @@ export class CargoComponent{
             "showDetails": false
             },
             {
+            "index":1,
             "quantity": 500,
             "package": "New York",
             "commodity": "NY",
@@ -40,6 +46,12 @@ export class CargoComponent{
                 3000
             ],
             "showDetails": false
-            }]
+            }];
+            
+            tempObject: any;
+            
+            toggleDetails(index) :void{
+              this.cargos[index].showDetails = !this.cargos[index].showDetails;
+            }
     
 }
