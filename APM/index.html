@@ -45,7 +45,18 @@
    
     
     <!-- 2. Configure SystemJS -->
-    
+    <script>
+        System.config({
+        packages: {        
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('app/main')
+            .then(null, console.error.bind(console));
+</script>
     
 </head>
 
@@ -786,19 +797,10 @@
 
 <!-- page specific js -->
 <script src="sing/js/index.js"></script>
+<script src="sing/vendor/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
 
-<script>
-        System.config({
-        packages: {        
-          app: {
-            format: 'register',
-            defaultExtension: 'js'
-          }
-        }
-      });
-      System.import('app/main')
-            .then(null, console.error.bind(console));
-</script>
+
+
 </body>
 
 </html>
