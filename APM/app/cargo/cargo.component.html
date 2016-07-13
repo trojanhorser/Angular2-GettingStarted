@@ -1,13 +1,5 @@
-<section class="widget">
-    <header>
-
-        <div class="input-group">
-
-            <input type="search" [(ngModel)]='listFilter' class="form-control col-sm-8" id="search-input">
-
-        </div>
-
-    </header>
+<!--
+<div role="content">
     <div class="widget-body">
 
         <table class="table table-bordered table-lg mt-lg mb-0">
@@ -61,54 +53,192 @@
             </tbody>
         </table>
     </div>
-</section>
-<section class="widget">
-                    <header>
-                        <h4>
-                            Flot <span class="fw-semi-bold">Charts</span>
-                        </h4>
-                        <div class="widget-controls">
-                            <a data-widgster="expand" title="Expand" href="#" style="display: none;"><i class="glyphicon glyphicon-chevron-up"></i></a>
-                            <a data-widgster="collapse" title="Collapse" href="#"><i class="glyphicon glyphicon-chevron-down"></i></a>
-                            <a href="#" data-widgster="close"><i class="glyphicon glyphicon-remove"></i></a>
-                        </div>
-                    </header>
-                    <div class="widget-body">
-                        <div class="mt mb" id="flot-main" style="width: 100%; height: 260px; padding: 0px; position: relative;"><canvas class="flot-base" width="622" height="390" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 415px; height: 260px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div style="position: absolute; max-width: 69px; top: 246px; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(119, 119, 119); left: 31px; text-align: center;">2</div><div style="position: absolute; max-width: 69px; top: 246px; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(119, 119, 119); left: 107px; text-align: center;">3</div><div style="position: absolute; max-width: 69px; top: 246px; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(119, 119, 119); left: 182px; text-align: center;">4</div><div style="position: absolute; max-width: 69px; top: 246px; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(119, 119, 119); left: 258px; text-align: center;">5</div><div style="position: absolute; max-width: 69px; top: 246px; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(119, 119, 119); left: 333px; text-align: center;">6</div><div style="position: absolute; max-width: 69px; top: 246px; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(119, 119, 119); left: 409px; text-align: center;">7</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div style="position: absolute; top: 220px; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(119, 119, 119); left: 8px; text-align: right;">0</div><div style="position: absolute; top: 176px; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(119, 119, 119); left: 1px; text-align: right;">10</div><div style="position: absolute; top: 132px; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(119, 119, 119); left: 1px; text-align: right;">20</div><div style="position: absolute; top: 88px; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(119, 119, 119); left: 1px; text-align: right;">30</div><div style="position: absolute; top: 44px; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(119, 119, 119); left: 1px; text-align: right;">40</div><div style="position: absolute; top: 1px; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(119, 119, 119); left: 1px; text-align: right;">50</div></div></div><canvas class="flot-overlay" width="622" height="390" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 415px; height: 260px;"></canvas></div>
-                        <div class="chart-tooltip" id="flot-main-tooltip" style="opacity: 0; display: none;"></div>
-                        <p class="fs-mini text-muted">
-                            Flot is a <span class="fw-semi-bold">pure</span> JavaScript plotting library for jQuery, with a
-                            focus on simple usage, attractive looks and interactive features.
-                        </p>
-                        <h4 class="mt">Interactive <span class="fw-semi-bold">Sparklines</span></h4>
-                        <div class="row mt">
-                            <div class="col-sm-6">
-                                <div class="stats-row">
-                                    <div class="stat-item">
-                                        <p class="value4 fw-thin">34 567</p>
-                                        <h6 class="name text-muted no-margin">Overall Values</h6>
-                                    </div>
-                                    <div class="stat-item stat-item-mini-chart">
-                                        <div class="sparkline" data-type="bar" data-bar-color="#f0b518" data-height="30" data-bar-width="6" data-bar-spacing="2"><canvas width="54" height="30" style="display: inline-block; width: 54px; height: 30px; vertical-align: top;"></canvas></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="stats-row">
-                                    <div class="stat-item">
-                                        <p class="value4 fw-thin">34 567</p>
-                                        <h6 class="name text-muted no-margin">Overall Values</h6>
-                                    </div>
-                                    <div class="stat-item stat-item-mini-chart">
-                                        <div class="sparkline" data-type="bar" data-bar-color="#FFA587" data-height="30" data-bar-width="6" data-bar-spacing="2"><canvas width="54" height="30" style="display: inline-block; width: 54px; height: 30px; vertical-align: top;"></canvas></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+</div>
+-->
 
-                        <p class="fs-mini text-muted">
-                            This jQuery plugin generates sparklines (small inline charts) directly in the browser using
-                            data supplied either inline in the HTML, or via javascript.
-                        </p>
-                    </div>
-                </section>
+
+
+
+<div role="content">
+
+    <!-- widget edit box -->
+    <div class="jarviswidget-editbox">
+        <!-- This area used as dropdown edit box -->
+
+    </div>
+    <!-- end widget edit box -->
+
+    <!-- widget content -->
+    <div class="widget-body no-padding">
+
+        <div id="dt_basic_wrapper" class="dataTables_wrapper form-inline no-footer">
+            <div class="dt-toolbar">
+                <div class="col-xs-12 col-sm-6">
+                    <div id="dt_basic_filter" class="dataTables_filter"><label><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span> 
+                     <input type="search" [(ngModel)]='listFilter' class="form-control col-sm-8" id="search-input">
+                    </label></div>
+                </div>
+                <div class="col-sm-6 col-xs-12 hidden-xs">
+                    <div class="dataTables_length" id="dt_basic_length"><label><select name="dt_basic_length" aria-controls="dt_basic" class="form-control"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select></label></div>
+                </div>
+            </div>
+            <table id="dt_basic" class="table table-striped table-bordered table-hover dataTable no-footer" width="100%"
+                role="grid" aria-describedby="dt_basic_info" style="width: 100%;">
+                <thead>
+                    <tr role="row">
+                        
+                        
+                         <th data-hide="phone" class="sorting_asc" tabindex="0" aria-controls="dt_basic" rowspan="1" colspan="1"
+                            aria-sort="ascending" aria-label="ID: activate to sort column descending" style="width: 60px;">Quantity</th>
+                        <th data-class="expand" class="expand sorting" tabindex="0" aria-controls="dt_basic" rowspan="1"
+                            colspan="1" aria-label=" Name: activate to sort column ascending" style="width: 139px;">
+                            <i class="fa fa-fw fa-user text-muted hidden-md hidden-sm hidden-xs"></i> Package</th>
+                        <th data-hide="phone"
+                            class="sorting" tabindex="0" aria-controls="dt_basic" rowspan="1" colspan="1" aria-label=" Phone: activate to sort column ascending"
+                            style="width: 206px;"><i class="fa fa-fw fa-phone text-muted hidden-md hidden-sm hidden-xs"></i> Commodity</th>
+                        <th class="sorting"
+                            tabindex="0" aria-controls="dt_basic" rowspan="1" colspan="1" aria-label="Company: activate to sort column ascending"
+                            style="width: 500px;">HS Code</th>
+                        <th data-hide="phone,tablet" class="sorting" tabindex="0" aria-controls="dt_basic" rowspan="1"
+                            colspan="1" aria-label=" Zip: activate to sort column ascending" style="width: 143px;"><i class="fa fa-fw fa-map-marker txt-color-blue hidden-md hidden-sm hidden-xs"></i> Weight</th>
+                        <th data-hide="phone,tablet"
+                            class="sorting" tabindex="0" aria-controls="dt_basic" rowspan="1" colspan="1" aria-label="City: activate to sort column ascending"
+                            style="width: 285px;">Volume</th>
+                    </tr>
+                </thead>
+                 <tbody *ngFor="#cargo of cargos | cargoFilter:listFilter">
+                <tr>
+                    <td>
+                        <span *ngIf="!cargo.showDetails" (click)="toggleDetails(cargo.index)" class="glyphicon glyphicon-plus"></span>
+                        <span *ngIf="cargo.showDetails" (click)="toggleDetails(cargo.index)"  class="glyphicon glyphicon-minus"></span>
+                    </td>
+                    <td>{{cargo.quantity}}</td>
+                    <td class="text-align-right">{{cargo.package}}</td>
+                    <td class="text-align-right">{{cargo.commodity}}</td>
+                    <td class="text-align-right">{{cargo.hsCode}}</td>
+                    <td class="text-align-right">{{cargo.weight}}</td>
+                    <td class="text-align-right">{{cargo.volume}}</td>
+
+                </tr>
+                <tr *ngIf="cargo.showDetails">
+
+                    <td colspan="7">
+                      
+                       <div class="widget-body no-padding">
+
+						<form action="" class="smart-form">							
+						
+							<fieldset>
+
+								<div class="row">
+									<section class="col col-6">
+                                         <label>Marks And Numbers</label>
+										<label class="input">
+											<input type="text" placeholder="2/12">
+										</label>
+									</section>
+									<section class="col col-6">
+                                        
+                                         <label>Descritption</label>
+										<label class="input">
+                                           
+											<input type="text" placeholder="4/12">
+										</label>
+									</section>
+                                    
+                                    
+									
+								</div>
+                                
+                                <div class="row">
+                                     <section class="col col-10">
+										  <label for="exampleInputEmail2">Associated Containers</label>
+                                      
+                                        <label class="input">
+											
+											<input type="text" placeholder="6/12">
+										</label>
+									</section>
+                                </div>
+                                
+							</fieldset>
+
+							<footer>
+								<button type="submit" class="btn btn-primary">
+									Submit
+								</button>
+								<button type="button" class="btn btn-default" onclick="window.history.back();">
+									Back
+								</button>
+							</footer>
+						</form>
+
+					</div>
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+         
+        </div>
+
+    </div>
+    <!-- end widget content -->
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

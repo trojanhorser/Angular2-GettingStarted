@@ -1,21 +1,50 @@
-<div class="tabbable tabs-left mb-lg">
-    <ul id="tabs2" class="nav nav-tabs">
-        <li [ngClass]="{active: showVoyagesTab}" (click)="tabClicked('voyage')"><a data-target="#tab12" data-toggle="tab" aria-expanded="true">Voyages</a></li>
-        <li [ngClass]="{active: showBillOfLadingDetailsTab}" (click)="tabClicked('billoflading')"><a data-target="#tab22" data-toggle="tab" aria-expanded="false">Bill Of Lading Details</a></li>
-        <li [ngClass]="{active: showCargoDetailsTab}" (click)="tabClicked('cargo')"><a data-target="#tab32" data-toggle="tab" aria-expanded="false">Cargo Details</a></li>
-    </ul>
-    <div id="tabs2c" class="tab-content">
-        <div *ngIf="showVoyagesTab"  class="tab-pane" [ngClass]="{active: showVoyagesTab}" id="tab12" >
-            <voyage></voyage>
-        </div>
-        <div  *ngIf="showBillOfLadingDetailsTab"  class="tab-pane " [ngClass]="{active: showBillOfLadingDetailsTab}" id="tab22">
-            <bill-of-lading-detail></bill-of-lading-detail>
-        </div>
-        <div  *ngIf="showCargoDetailsTab"  class="tab-pane " [ngClass]="{active: showCargoDetailsTab}" id="tab32">
-            <cargo></cargo>
-        </div>
+
+<div role="content">
+
+    <!-- widget edit box -->
+    <div class="jarviswidget-editbox">
+        <!-- This area used as dropdown edit box -->
+
     </div>
+    <!-- end widget edit box -->
+
+    <!-- widget content -->
+    <div class="widget-body">
+
+        <div class="panel-group smart-accordion-default" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" class="collapsed"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> Voyages </a></h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                    <div class="panel-body no-padding">
+                         <voyage></voyage>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed" aria-expanded="false"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> Bill Of Lading </a></h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                    <div class="panel-body">
+                         <bill-of-lading-detail></bill-of-lading-detail>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed" aria-expanded="false"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> Cargo Details </a></h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                    <div class="panel-body">
+                          <cargo></cargo>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end widget content -->
+
 </div>
-
-
-
